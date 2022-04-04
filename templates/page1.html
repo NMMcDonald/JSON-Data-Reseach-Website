@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h1>
+Time to Beat Compared to Metacritic Rating
+</h1>
+
+<h3>
+Choose a Year
+</h3>
+
+<form action="/Time-To-beat-Compared-to-Metacritic-Rating" method="get">
+<select id="yearsP1" name="P1years">
+    <option value="Y4">2004</option>
+    <option value="Y5">2005</option>
+    <option value="Y6">2006</option>
+    <option value="Y7">2007</option>
+    <option value="Y8">2008</option>
+    <option value="Y9">2009</option>
+    <option value="Y10">2010</option>
+</select>
+<input type="submit" value="Submit">
+</form>
+{{response}}
+{% endblock %}
